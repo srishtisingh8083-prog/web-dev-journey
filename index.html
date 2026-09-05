@@ -1,29 +1,222 @@
+
 <!DOCTYPE html>
-
 <html>
-
 <head>
-    <title>YouTube Video</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Survival Guide</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Important!!</h1>
+    <header class="banner">
+        <img src="green.jpg" alt="Blue Star">
+        <h1>Good Morning, Students!</h1>
+        <h2>Here is what your day looks like @GEC Buxar</h2>
+    </header>
 
-    <p>This is an important video message that you should watch.</p>
+    <nav class="main-nav">
+        <a class="button" href="#home">Home</a>
+        <a class="button" href="#timetable">Timetable</a>
+        <a class="button" href="#reminders">Reminders</a>
+        <a class="button" href="#subjects">Today's Subjects</a>
+        <a class="button" href="#carry">Things to Carry</a>
+        <a class="button" href="#announcements">Announcements</a>
+        <a class="button" href="#campus">Campus</a>
+        <a class="button" href="#feedback">Feedback</a>
+    </nav>
 
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
-    
+    <main>
+
+        <section id="home" class="page">
+
+            <h2>Welcome back !!</h2>
+
+            <ul>
+                <li>Classes:6 hours</li>
+                <li>College hours: 10:00 am - 5:00 pm</li>
+                <li>Break: 1 hour (01:00 pm - 2:00 pm)</li>
+                <li>Location:GEC Buxar</li>
+            </ul>
+        </section>
+
+        <section id="timetable" class="page">
+
+            <h2>🗓️ Weekly Timetable</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Days</th>
+                    <th>10 AM - 11 AM</th>
+                    <th>11 AM - 12 PM</th>
+                    <th>12 PM - 1 PM</th>
+                    <th>1 PM - 2 PM</th>
+                    <th>2 PM - 3 PM</th>
+                    <th>3 PM - 4 PM</th>
+                    <th>4 PM - 5 PM</th>
+                </tr>
+
+                <tr>
+                    <th>Mon</th>
+                    <td>GATE/Placement</td>
+                    <td colspan="2">OS Lab (G1) / DSA Lab (G2)</td>
+                    <td rowspan="6">R<br>E<br>C<br>E<br>S<br>S</td>
+                    <td>DM</td>
+                    <td>DSA</td>
+                    <td>UHV</td>
+                </tr>
+
+                <tr>
+                    <th>Tue</th>
+                    <td>IKS</td>
+                    <td colspan="2">DE Lab (C) / OOPs Lab (G1) / Library (D)</td>
+                    <td>DSA</td>
+                    <td>OS</td>
+                    <td>OOPs</td>
+                </tr>
+
+                <tr>
+                    <th>Wed</th>
+                    <td>IKS</td>
+                    <td colspan="2">DE Lab (A) / OOPs Lab (G2) / Library (B)</td>
+                    <td>DE</td>
+                    <td>UHV</td>
+                    <td>DM</td>
+                </tr>
+
+                <tr>
+                    <th>Thu</th>
+                    <td>IKS</td>
+                    <td colspan="2">DSA Lab (G1) / OS Lab (G2)</td>
+                    <td>UHV</td>
+                    <td>OS</td>
+                    <td>OOPs</td>
+                </tr>
+
+                <tr>
+                    <th>Fri</th>
+                    <td>DM (Tutorial)</td>
+                    <td colspan="2">DE Lab (D) / CISCO Lab (G1) / Library (C)</td>
+                    <td>DE</td>
+                    <td>DSA</td>
+                    <td>OOPs</td>
+                </tr>
+
+                <tr>
+                    <th>Sat</th>
+                    <td>Spoken Tutorial</td>
+                    <td colspan="2">DE Lab (B) / CISCO Lab (G2) / Library (A)</td>
+                    <td>DM</td>
+                    <td>DE</td>
+                    <td>OS</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="reminders" class="page">
+
+            <h2>📌 Don't Forget!</h2>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        Submit your JAVA assignments on time.
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        Bring practical file for lab sessions.
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        Complete Maths exercises before the next class.
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        Carry your ID card to college
+                    </label>
+                </li>
+            </ul>
+        </section>
+
+        <section id="subjects" class="page">
+
+            <h2>📚 Today's Subjects</h2>
+            <ul>
+                <li>IKS (Indian Knowledge System)</li>
+                <li>DE (Digital Electronics)</li>
+                <li>DM (Discrete Mathematics)</li>
+                <li>DSA (Data Structures and Algorithms)</li>
+                <li>OOPs (Object Oriented Programming)</li>
+                <li>OS (Operating System)</li>
+                <li>UHV (Universal Human Values)</li>
+            </ul>
+        </section>
+
+        
+
+        <section id="carry" class="page">
+            <h2>🎒 Things to Carry</h2>
+            <ul>
+                <li>Notebook</li>
+                <li>Pen</li>
+                <li>Laptop</li>
+                <li>Water Bottle</li>
+                <li>Practical File</li>
+                <li>Motivation (Optional)🤓</li>
+            </ul>
+        </section>
+
+        <section id="announcements" class="page">
+            <h2>Announcements</h2>
+            <p>• Mid semester exams are scheduled from next week.</p>
+            <p>• Event-coding club registration is open.</p>
+            <p>• New lab sessions will start next month.</p>
+        </section>
+
+        <section id="campus" class="page">
+            <h2>🏫 Campus</h2>
+            <img src="gec bux camp.jpg" alt="GEC Buxar Campus" class="campus-img">
+            <p>Established in 2019 by the Government of Bihar, Government Engineering College (GEC), Buxar is a premier public technical institution approved by AICTE and affiliated with Bihar Engineering University (BEU). While the college initially operated out of a mentor campus in Bakhtiyarpur, it successfully shifted to its permanent, independent campus. Spanning a well-structured area of approximately 8 to 10 acres, the new campus is located at Mahdah on Itarhi Road, safely adjacent to the Buxar Police Line. The modern campus infrastructure features a dedicated academic building equipped with smart classrooms and core engineering laboratories, a central library, an auditorium, and a workshop building. Designed to be a fully residential learning environment, the campus also hosts faculty quarters, two distinct four-story boys' hostels, and a separate girls' hostel, ensuring a self-contained and secure space for its expanding student body.</p>
+        </section>
+
+        <section id="feedback" class="page">
+
+            <h2>Feedback Form</h2>
+
+            <form action="submit" method="post">
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Enter your name here">
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="Enter your email here">
+
+                <label for="favsubject">Favourite Subject: </label>
+                <input type="text" id="favsubject" placeholder="Enter your favourite subject here">
+
+                <label for="rateday">Rate your day: </label>
+                <select id="rateday">
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+
+                <label for="message">Message: </label>
+                <textarea id="message" placeholder="Got any message? share it here"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+    </main>
 
 </body>
-
 </html>
