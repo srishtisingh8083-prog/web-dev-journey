@@ -20,21 +20,23 @@ body {
     object-fit: cover;
 }
 
-.banner h1,
-.banner h2 {
+.banner-text {
     position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    width: 90%;
     text-align: center;
+    color: white;
 }
 
-.banner h1 {
-    top: 80px;
+.banner-text h1 {
+    margin-bottom: 10px;
 }
 
-.banner h2 {
-    top: 140px;
+.banner-text h2 {
+    margin: 0;
+    font-size: 1.1rem;
 }
 
 .main-nav {
